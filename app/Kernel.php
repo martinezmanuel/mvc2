@@ -183,7 +183,7 @@ Class Kernel{
 						$controllerCall = new Controllers\Game();
 						$controllerCall->showAction($idParam);
 						break;
-					case "grille/default":
+					case "jeu/grille":
 						self::$autocommit=1;
 						$controllerCall = new Controllers\Grille();
 						$controllerCall->defaultAction();
