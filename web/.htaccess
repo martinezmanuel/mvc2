@@ -1,0 +1,21 @@
+#mise en place de réecriture
+Options +FollowSymLinks
+RewriteEngine On
+#adresse de base de récriture
+RewriteBase /
+#Regles
+RewriteCond %{REQUEST_FILENAME} -d [OR]
+## If the request is for a valid file
+RewriteCond %{REQUEST_FILENAME} -f [OR]
+## If the request is for a valid link
+RewriteCond %{REQUEST_FILENAME} -l
+## don't do anything
+RewriteRule ^ - [L]
+
+RewriteRule ^([^/]+)/([^/]+)/([^/]+)/?$ /index.php?controller=$1&action=$2&id=$3 [L,QSA]
+
+RewriteRule ^([^/]+)/([^/]+)/?$ /index.php?controller=$1&action=$2 [L,QSA]
+
+RewriteRule ^([^/]+)/?$ /index.php?controller=$1 [L,QSA]
+
+ErrorDocument 404 /404.php

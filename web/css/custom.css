@@ -1,0 +1,29 @@
+body {
+  padding-top: 5rem;
+}
+.starter-template {
+  padding: 3rem 1.5rem;
+  text-align: center;
+}
+.navbar-brand img {
+	height:40px;
+}
+.container {
+	padding:10px;
+}
+h1{
+  font-size: 3em;
+  font-style: italic;
+}
+.lead{
+  font-size: 2em;
+  color: red;
+}
+#plateau{
+  width: auto;
+}
+.caseBataille{
+		width:75px;
+		height:75px;
+		text-align:center;
+	}
