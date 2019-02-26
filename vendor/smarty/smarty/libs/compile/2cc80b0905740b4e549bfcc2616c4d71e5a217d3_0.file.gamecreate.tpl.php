@@ -25,11 +25,11 @@ function content_5c51749a865c82_27502820 (Smarty_Internal_Template $_smarty_tpl)
 	<div class="card-body">
 		<h5 class="card-title">Nouvelle partie</h5>
 		<form id="gameForm" action="/game/save" method="post" enctype="multipart/form-data">
-			<input type="hidden" id="gameFormid" name="gameFormid" value="<?php echo $_smarty_tpl->tpl_vars['partie']->value->id_partie;?>
+			<input type="hidden" id="gameformid" name="gameformid" value="<?php echo $_smarty_tpl->tpl_vars['partie']->value->id_partie;?>
 ">
 			<div class="form-group">
-				<label for="gameFormTitle">Quel est le titre de votre partie ?</label>
-				<input type="text" class="form-control" name="gameFormTitle" id="gameFormTitle" value="<?php echo $_smarty_tpl->tpl_vars['partie']->value->libelle_partie;?>
+				<label for="gameformtitle">Quel est le titre de votre partie ?</label>
+				<input type="text" class="form-control" name="gameformtitle" id="gameformtitle" value="<?php echo $_smarty_tpl->tpl_vars['partie']->value->libelle_partie;?>
 ">
 			</div>
 			<p>

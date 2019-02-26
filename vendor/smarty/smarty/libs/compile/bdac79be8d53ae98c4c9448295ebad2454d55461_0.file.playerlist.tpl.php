@@ -1,26 +1,26 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-01-30 10:33:12
+/* Smarty version 3.1.33, created on 2019-02-26 10:43:56
   from 'C:\xampp\htdocs\mvc\app\templates\playerlist.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5c516f5842b687_66495127',
+  'unifunc' => 'content_5c750a5c1d65c9_00023795',
   'has_nocache_code' => false,
-  'file_dependency' => 
+  'file_dependency' =>
   array (
-    'bdac79be8d53ae98c4c9448295ebad2454d55461' => 
+    'bdac79be8d53ae98c4c9448295ebad2454d55461' =>
     array (
       0 => 'C:\\xampp\\htdocs\\mvc\\app\\templates\\playerlist.tpl',
-      1 => 1548840790,
+      1 => 1551173893,
       2 => 'file',
     ),
   ),
-  'includes' => 
+  'includes' =>
   array (
   ),
 ),false)) {
-function content_5c516f5842b687_66495127 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5c750a5c1d65c9_00023795 (Smarty_Internal_Template $_smarty_tpl) {
 ?><table class="table">
 <thead class="thead-dark">
 <tr>
@@ -32,16 +32,24 @@ function content_5c516f5842b687_66495127 (Smarty_Internal_Template $_smarty_tpl)
 </thead>
 <tbody>
 <?php
-$_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['joueurs']->value, 'joueur');
+$_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['joueur']->value, 'joueur');
 if ($_from !== null) {
 foreach ($_from as $_smarty_tpl->tpl_vars['joueur']->value) {
 ?>
-<tr><th scope='col'><?php echo $_smarty_tpl->tpl_vars['joueur']->value->id_joueur;?>
-</th><td><?php echo $_smarty_tpl->tpl_vars['joueur']->value->pseudo_user;?>
-</td><td><?php echo $_smarty_tpl->tpl_vars['joueur']->value->nom_user;?>
-</td><td><a class="btn btn-primary" href="\player\create\<?php echo $_smarty_tpl->tpl_vars['joueur']->value->id_joueur;?>
-">Modifier</a>&nbsp;<a class="btn btn-danger" href="\player\delete\<?php echo $_smarty_tpl->tpl_vars['joueur']->value->id_joueur;?>
-">Supprimer</a></td></tr>
+<tr>
+  <th scope='col'><?php echo $_smarty_tpl->tpl_vars['joueur']->value->id_joueur;?>
+</th>
+    <td><?php echo $_smarty_tpl->tpl_vars['joueur']->value->pseudo_user;?>
+</td>
+    <td><?php echo $_smarty_tpl->tpl_vars['joueur']->value->nom_user;?>
+</td>
+    <td>
+      <a class="btn btn-primary" href="\player\create\<?php echo $_smarty_tpl->tpl_vars['joueur']->value->id_joueur;?>
+">Modifier</a>&nbsp;
+      <a class="btn btn-danger" href="\player\delete\<?php echo $_smarty_tpl->tpl_vars['joueur']->value->id_joueur;?>
+">Supprimer</a>
+    </td>
+  </tr>
 <?php
 }
 }

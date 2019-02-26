@@ -1,10 +1,10 @@
 <?php
 namespace App\Controllers;
-
+use \App\Kernel;
 class Grille {
 
 	static public function defaultAction () {
-		\App\Kernel::viewerSmarty("grillejeu.tpl");
+		Kernel::viewerSmarty("Grille","grillejeu.tpl");
 	}
 
 }

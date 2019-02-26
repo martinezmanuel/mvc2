@@ -7,7 +7,7 @@
     <meta name="author" content="">
     <link rel="icon" href="/img/images.png">
 
-    <title>Wargamme Medieval</title>
+    <title><?= \App\Kernel::getTitle(); ?></title>
 
     <!-- Bootstrap core CSS -->
     <link href="/css/bootstrap.min.css" rel="stylesheet">

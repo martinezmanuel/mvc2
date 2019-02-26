@@ -1,10 +1,11 @@
 <?php
 namespace App\Controllers;
+use \App\Kernel;
 
 class Home {
-	
+
 	static public function defaultAction () {
-		\App\Kernel::viewerSmarty("home.tpl");		
+		Kernel::viewerSmarty("Accueil","home.tpl");		
 	}
 
 }
