@@ -2,9 +2,9 @@
 namespace App\Controllers;
 
 abstract class ControllerStd {
-	
+
 	private $parameters;
-	
+
 	public function __contruct() {
 		$this->setParameters(array());
 	}
@@ -16,15 +16,15 @@ abstract class ControllerStd {
 		}
 		return $this->parameters;
 	}
-	
+
 	public function getParameters($parameter="", $defaultValue = null) {
 		if ( $parameter != "" ) {
-			if ( array_key_exists ( strtolower($parameter), $this->parameters) )
+			if (array_key_exists(strtolower($parameter), $this->parameters) )
 				return $this->parameters[strtolower($parameter)];
 			else
 				return $defaultValue;
 		}
 		else return $this->parameters;
 	}
-	
+
 }

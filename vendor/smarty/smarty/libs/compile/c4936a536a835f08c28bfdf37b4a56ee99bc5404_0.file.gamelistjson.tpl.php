@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-02-26 14:51:26
+/* Smarty version 3.1.33, created on 2019-03-01 13:10:04
   from 'C:\xampp\htdocs\mvc\app\templates\gamelistjson.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5c75445e962c97_85296536',
+  'unifunc' => 'content_5c79211c279ee7_62539816',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'c4936a536a835f08c28bfdf37b4a56ee99bc5404' => 
     array (
       0 => 'C:\\xampp\\htdocs\\mvc\\app\\templates\\gamelistjson.tpl',
-      1 => 1551189081,
+      1 => 1551191469,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5c75445e962c97_85296536 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5c79211c279ee7_62539816 (Smarty_Internal_Template $_smarty_tpl) {
 ?><table class="table">
   <thead class="thead-dark">
     <tr>

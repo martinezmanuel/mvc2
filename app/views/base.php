@@ -5,22 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="icon" href="/img/images.png">
+    <link rel="icon" href="img/images.png">
 
     <title><?= \App\Kernel::getTitle(); ?></title>
 
     <!-- Bootstrap core CSS -->
-    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
-    <link href="/css/custom.css" rel="stylesheet">
-    <script src="/js/jquery-3.3.1.min.js"></script>
+    <link href="css/custom.css" rel="stylesheet">
+    <script src="js/jquery-3.3.1.min.js"></script>
   </head>
 
   <body>
 
     <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
-      <a class="navbar-brand" href="#"><img src="/img/images.png"></a>
+      <a class="navbar-brand" href="#"><img src="img/images.png"></a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -42,6 +42,13 @@
             <div class="dropdown-menu" aria-labelledby="dropdownPlayer">
               <a class="dropdown-item" href="/player/list">Liste</a>
               <a class="dropdown-item" href="/player/create">Nouveau joueur</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown <?php if ( strpos(\App\Kernel::getUrl(),'form') === 0 ) echo 'active';?>">
+            <a class="nav-link dropdown-toggle" href="/connexion" id="dropdownPlayer" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Connexion</a>
+            <div class="dropdown-menu" aria-labelledby="dropdownPlayer">
+              <a class="dropdown-item" href="/form/connecter">Se connecter</a>
+              <a class="dropdown-item" href="/form/create">Inscription</a>
             </div>
           </li>
           <li class="nav-item <?php if ( strpos(\App\Kernel::getUrl(),'jeu') === 0 ) echo 'active';?>">

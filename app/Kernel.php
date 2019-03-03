@@ -9,7 +9,7 @@ Class Kernel{
 	static private $autocommit=0;
 	static private $database;
 	static private $smarty;
-	static private $connexion="mysql:host=localhost;dbname=wargame;charset=utf8";
+	static private $connexion="mysql:host=localhost:8080;dbname=wargame;charset=utf8";
 	static private $dbUser="root";
 	static private $dbPassword="";
 
@@ -188,9 +188,21 @@ Class Kernel{
 						$controllerCall = new Controllers\Grille();
 						$controllerCall->defaultAction();
 						break;
+					case "form/create":
+						self::$autocommit=1;
+						$controllerCall = new Controllers\Inscription();
+						$controllerCall->setParameters($_POST);
+						$controllerCall->SaveAction();
+						break;
+					case "form/connecter":
+						self::$autocommit=1;
+						self::$url="json";
+						$controllerCall = new Controllers\Connexion();
+						$controllerCall->defaultAction();
+						break;
 					default:
 						self::$autocommit=1;
-						$controllerCall = new Controllers\Home();
+						$controllerCall = new Controllers\Connexion();
 						$controllerCall->defaultAction();
 						break;
 				}
