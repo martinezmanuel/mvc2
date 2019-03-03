@@ -16,7 +16,7 @@
 				<input type="password" class="form-control" name="inscriformpass" id="inscriformpass" value="{$membre->pass_membre}" placeholder="votre mot de passe">
 			</div>
 			<p>
-				<button type="submit" id="inscription" class="btn btn-primary">Envoyer</button>
+				<button type="submit" id="inscription" name="inscription" class="btn btn-primary">Envoyer</button>
 			</p>
 		</form>
 	</div>

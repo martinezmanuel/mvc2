@@ -11,7 +11,7 @@ class Connexion extends ControllerStd
     Kernel::viewerSmarty("Connexion","form-connexion.tpl");
   }
   function connexion($nom, $pass) {
-  			$sql=$dbh->prepare("SELECT * FROM membres WHERE nom=:nom_membre  AND pass=:pass_membre ");
+  			$sql=$database->prepare("SELECT * FROM membres WHERE nom=:nom_membre  AND pass=:pass_membre ");
   			$sql->execute(array("nom"=>$nom,"pass"=>$pass));
   			if ($row = $sql->fetch()) {
   				$id=$row["id_membre"];
